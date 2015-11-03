@@ -6,7 +6,7 @@ RUN rm -rf /var/www/html/index*
 RUN wget -P /var/www/html https://raw.githubusercontent.com/remonlam/rpi-http-test/master/cloud_PNG6.png
 RUN wget -P /var/www/html https://raw.githubusercontent.com/remonlam/rpi-http-test/master/index.html
 RUN wget -P / https://raw.githubusercontent.com/remonlam/rpi-http-test/master/run
-RUN chmod 755 /var/www/html/run
+RUN chmod 755 /./entrypoint.sh
 
 CMD /./run
 
