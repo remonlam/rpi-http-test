@@ -8,6 +8,6 @@ RUN wget -P /var/www/html https://raw.githubusercontent.com/remonlam/rpi-http-te
 RUN wget -P / https://raw.githubusercontent.com/remonlam/rpi-http-test/master/entrypoint.sh
 RUN chmod 755 /./entrypoint.sh
 
-CMD /./run
+CMD /./entrypoint.sh
 
 EXPOSE 80
